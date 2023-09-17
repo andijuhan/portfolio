@@ -8,7 +8,10 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 const Intro = () => {
    return (
-      <section className='mb-28 max-w-[50rem] text-center sm:mb-0'>
+      <section
+         className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'
+         id='home'
+      >
          <div className='flex flex-col justify-center items-center'>
             <div className='relative'>
                <motion.div
@@ -17,7 +20,7 @@ const Intro = () => {
                   transition={{ type: 'tween', duration: 0.2 }}
                >
                   <Image
-                     src='/profile.jpeg'
+                     src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100'
                      alt='Ricardo portrait'
                      width='192'
                      height='192'
