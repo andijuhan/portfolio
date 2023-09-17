@@ -17,7 +17,7 @@ const Intro = () => {
                   transition={{ type: 'tween', duration: 0.2 }}
                >
                   <Image
-                     src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100'
+                     src='/profile.jpeg'
                      alt='Ricardo portrait'
                      width='192'
                      height='192'
@@ -46,7 +46,7 @@ const Intro = () => {
                initial={{ opacity: 0, y: 100 }}
                animate={{ opacity: 1, y: 0 }}
             >
-               <span className='font-bold'>Hello, I&apos;m Ricardo.</span>{' '}
+               <span className='font-bold'>Hello, I&apos;m Juhandi.</span>{' '}
                I&apos;m a{' '}
                <span className='font-bold'>full-stack developer</span> with{' '}
                <span className='font-bold'>8 years</span> of experience. I enjoy
