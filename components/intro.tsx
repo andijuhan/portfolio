@@ -5,12 +5,27 @@ import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import { UseActiveSectionContext } from '@/context/activeSectionContext';
 
 const Intro = () => {
+   const { ref, inView } = useInView({
+      threshold: 0.75,
+   });
+   const { setActiveSection } = UseActiveSectionContext();
+
+   useEffect(() => {
+      if (inView) {
+         setActiveSection('Home');
+      }
+   }, [inView, setActiveSection]);
+
    return (
       <section
          className='mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-28'
          id='home'
+         ref={ref}
       >
          <div className='flex flex-col justify-center items-center'>
             <div className='relative'>
@@ -52,9 +67,10 @@ const Intro = () => {
                <span className='font-bold'>Hello, I&apos;m Juhandi.</span>{' '}
                I&apos;m a{' '}
                <span className='font-bold'>full-stack developer</span> with{' '}
-               <span className='font-bold'>8 years</span> of experience. I enjoy
-               building <span className='italic'>sites & apps</span>. My focus
-               is <span className='underline'>React (Next.js)</span>.
+               <span className='font-bold'>8 years</span> of experience.
+               <br />I enjoy building{' '}
+               <span className='italic'>sites & apps</span>. My focus is{' '}
+               <span className='underline'>React (Next.js)</span>.
             </motion.h1>
 
             <motion.div
