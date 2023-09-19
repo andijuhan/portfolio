@@ -1,28 +1,36 @@
 'use client';
+import type { SectionName } from '@/lib/types';
 import React, { useState, createContext, useContext } from 'react';
-import { links } from '@/lib/data';
 
-type SectionName = (typeof links)[number]['name'];
-
-interface IActiveSectionContextProviderProps {
+type ActiveSectionContextProviderProps = {
    children: React.ReactNode;
-}
+};
 
-interface IActiveSection {
+type ActiveSection = {
    activeSection: SectionName;
    setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
-}
+   timeOfLastClick: number;
+   setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+};
 
-export const ActiveSectionContext = createContext<IActiveSection | null>(null);
+export const ActiveSectionContext = createContext<ActiveSection | null>(null);
 
 const ActiveSectionContextProvider = ({
    children,
-}: IActiveSectionContextProviderProps) => {
+}: ActiveSectionContextProviderProps) => {
    const [activeSection, setActiveSection] = useState<SectionName>('Home');
+   const [timeOfLastClick, setTimeOfLastClick] = useState<number>(0);
+   //jika timeOfLastClick === waktu sekarang maka disable API react-intersection-observer
+   //artinya jika tombol menu di klik, API react-intersection-observer tidak akan dijalankan
 
    return (
       <ActiveSectionContext.Provider
-         value={{ activeSection, setActiveSection }}
+         value={{
+            activeSection,
+            setActiveSection,
+            timeOfLastClick,
+            setTimeOfLastClick,
+         }}
       >
          {children}
       </ActiveSectionContext.Provider>

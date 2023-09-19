@@ -1,6 +1,6 @@
-interface SectionHeadingProps {
+type SectionHeadingProps = {
    children: string;
-}
+};
 
 const SectionHeading = ({ children }: SectionHeadingProps) => {
    return (
