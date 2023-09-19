@@ -39,16 +39,16 @@ const Experience = () => {
                         background: 'white',
                         fontSize: '1.5rem',
                         boxShadow: 'none',
-                        border: '4px solid rgba(0, 0, 0, 0.05',
+                        border: '2px solid #818cf8',
                      }}
                   >
-                     <h3 className='font-semibold capitalize'>
+                     <h3 className='font-semibold text-lg capitalize'>
                         {experienceItem.title}
                      </h3>
-                     <p className='font-normal !mt-0'>
+                     <p className='font-normal !text-base !mt-0'>
                         {experienceItem.location}
                      </p>
-                     <p className='!mt-1 !font-normal text-gray-700'>
+                     <p className='!mt-1 !font-normal !text-base text-gray-700'>
                         {experienceItem.description}
                      </p>
                   </VerticalTimelineElement>

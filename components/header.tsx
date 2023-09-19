@@ -28,7 +28,8 @@ const Header = () => {
                   >
                      <Link
                         className={`flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition ${
-                           activeSection === link.name && 'text-gray-950'
+                           activeSection === link.name &&
+                           'text-gray-50 hover:text-gray-50'
                         }`}
                         href={link.hash}
                         onClick={() => {
@@ -40,7 +41,7 @@ const Header = () => {
 
                         {link.name === activeSection && (
                            <motion.span
-                              className='absolute bg-gray-100 rounded-full inset-0 -z-10'
+                              className='absolute bg-indigo-500 rounded-full inset-0 -z-10'
                               layoutId='activeSection'
                               transition={{
                                  type: 'spring',
