@@ -19,13 +19,13 @@ const ProjectCard = ({
       offset: ['0 1', '1.3 1'],
    });
 
-   const scrollProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
    const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
    return (
       <motion.div
          ref={ref}
-         style={{ scale: scrollProgress, opacity: opacityProgress }}
+         style={{ scale: scaleProgress, opacity: opacityProgress }}
          className='group mb-3 sm:mb-8 last:mb-0'
       >
          <section className='relative bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 transition group-even:pl-8'>
