@@ -24,7 +24,7 @@ const Intro = () => {
                   transition={{ type: 'tween', duration: 0.2 }}
                >
                   <Image
-                     src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100'
+                     src='/juhandi.jpg'
                      alt='Ricardo portrait'
                      width='192'
                      height='192'
@@ -56,7 +56,7 @@ const Intro = () => {
                <span className='font-bold'>Hello, I&apos;m Juhandi.</span>{' '}
                I&apos;m a{' '}
                <span className='font-bold'>full-stack developer</span> with{' '}
-               <span className='font-bold'>8 years</span> of experience.
+               <span className='font-bold'>5 years</span> of experience.
                <br />I enjoy building{' '}
                <span className='italic'>sites & apps</span>. My focus is{' '}
                <span className='underline'>React (Next.js)</span>.

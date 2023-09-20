@@ -24,7 +24,7 @@ const Experience = () => {
                <React.Fragment key={index}>
                   <VerticalTimelineElement
                      contentStyle={{
-                        background: '#f3f4f6',
+                        background: 'white',
                         boxShadow: 'none',
                         border: '1px solid rgba(0, 0, 0, 0.05',
                         textAlign: 'left',
