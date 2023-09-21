@@ -30,7 +30,7 @@ const Header = () => {
                         className={`flex w-full items-center justify-center px-3 py-3 transition ${
                            activeSection === link.name
                               ? 'text-gray-50 hover:text-white'
-                              : 'hover:text-gray-950'
+                              : 'hover:text-black'
                         }`}
                         href={link.hash}
                         onClick={() => {
