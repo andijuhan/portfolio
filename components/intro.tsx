@@ -79,7 +79,7 @@ const Intro = () => {
                   className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
                >
                   Contact me here
-                  <BsArrowRight clasName='opacity-70 group-hover:translate-x-2 transition' />
+                  <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                </Link>
                <a
                   href='/CV.pdf'
@@ -87,7 +87,7 @@ const Intro = () => {
                   download={true}
                >
                   Download CV
-                  <HiDownload clasName='opacity-70 group-hover:translate-y-2 transition' />
+                  <HiDownload className='opacity-70 group-hover:translate-y-1 transition' />
                </a>
                <div className='flex gap-4'>
                   <a

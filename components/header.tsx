@@ -42,7 +42,7 @@ const Header = () => {
 
                         {link.name === activeSection && (
                            <motion.span
-                              className='absolute bg-gray-800 rounded-full inset-0 -z-10'
+                              className='absolute bg-indigo-500 rounded-full inset-0 -z-10'
                               layoutId='activeSection'
                               transition={{
                                  type: 'spring',

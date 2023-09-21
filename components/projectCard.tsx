@@ -3,6 +3,9 @@ import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef } from 'react';
+import { BiLinkExternal } from 'react-icons/bi';
+import { BsEye, BsGithub } from 'react-icons/bs';
+import Link from 'next/link';
 
 type ProjectCardProps = (typeof projectsData)[number];
 
@@ -28,12 +31,21 @@ const ProjectCard = ({
          style={{ scale: scaleProgress, opacity: opacityProgress }}
          className='group mb-3 sm:mb-8 last:mb-0'
       >
-         <section className='relative flex flex-col-reverse gap-4 bg-white max-w-[42rem] border shadow-sm border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[20rem] transition sm:group-even:pl-8'>
+         <section className='relative flex flex-col-reverse gap-4 bg-white max-w-[42rem] border shadow-sm border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:h-[22rem] transition sm:group-even:pl-8'>
             <div className='py-4 px-5 p-2 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full pb-8 sm:group-even:ml-[18rem]'>
-               <h3 className='text-2xl font-semibold'>{title}</h3>
-               <p className='mt-4 sm:mt-2 leading-relaxed text-gray-700'>
+               <h3 className='text-2xl mb-4 font-semibold'>{title}</h3>
+               <div className='flex gap-4 text-[2rem] text-gray-300'>
+                  <Link href={'#'}>
+                     <BiLinkExternal className='hover:text-indigo-400' />
+                  </Link>
+                  <Link href={'#'}>
+                     <BsGithub className='hover:text-indigo-400' />
+                  </Link>
+               </div>
+               <p className='mt-4 leading-relaxed text-gray-700'>
                   {description}
                </p>
+
                <ul className='flex flex-wrap mt-8 gap-2 sm:mt-auto font-medium'>
                   {tags.map((tag, index) => (
                      <li
