@@ -11,6 +11,7 @@ import React from 'react';
 
 const Experience = () => {
    const { ref } = useSectionInView('Experience');
+
    return (
       <section
          className='mb-28 sm:mb-40 max-w-[60rem] scroll-mt-28'
