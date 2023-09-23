@@ -76,14 +76,14 @@ const Intro = () => {
                      setTimeOfLastClick(Date.now());
                   }}
                   href='#contact'
-                  className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+                  className='group bg-gray-900 dark:bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
                >
                   Contact me here
                   <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                </Link>
                <a
                   href='/CV.pdf'
-                  className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
+                  className='group bg-white dark:text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
                   download={true}
                >
                   Download CV

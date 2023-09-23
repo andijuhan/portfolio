@@ -15,7 +15,7 @@ const About = () => {
          id='about'
          ref={ref}
       >
-         <div className='absolute inset-0 -z-10 bg-white rounded-full blur-[3rem]'></div>
+         <div className='dark:hidden absolute inset-0 -z-10 bg-white rounded-full blur-[3rem]'></div>
          <SectionHeading>about me</SectionHeading>
          <p className='mb-3'>
             After graduating with a degree in{' '}
