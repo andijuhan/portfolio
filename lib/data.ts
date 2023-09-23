@@ -97,7 +97,7 @@ export const skillsData = [
    'Prisma',
    'MongoDB',
    'Mysql',
-   'Laravel',
+   'Express',
    'Rest API',
    'Framer Motion',
 ] as const;
