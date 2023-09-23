@@ -33,7 +33,7 @@ const Contact = () => {
          }}
       >
          <SectionHeading>contact me</SectionHeading>
-         <p className='text-gray-700 text-center'>
+         <p className='text-gray-700 dark:text-white/80 text-center'>
             Please contact me directly at{' '}
             <a className='underline' href='mailto:example@gmail.com'>
                andijuhandi.4@gmail.com
@@ -42,7 +42,7 @@ const Contact = () => {
          </p>
 
          <form
-            className='mt-10 flex flex-col gap-2'
+            className='mt-10 flex flex-col gap-2 text-black'
             action={async (formData) => {
                const { data, error } = await sendEmail(formData);
 
@@ -56,7 +56,7 @@ const Contact = () => {
             }}
          >
             <input
-               className='h-14 rounded-lg border border-black/10 p-4 outline-black/10'
+               className='h-14 rounded-lg border border-black/10 p-4 outline-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all'
                type='email'
                name='email'
                required
@@ -69,7 +69,7 @@ const Contact = () => {
                name='message'
                required
                maxLength={10000}
-               className='h-52 my-3 rounded-lg border-black/10 p-4 outline-black/10'
+               className='h-52 my-3 rounded-lg border-black/10 p-4 outline-black/10 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all'
                ref={messageInputRef}
             />
             {/* button submit harus dibuat server komponen untuk mendapatkan hook useFormStatus */}
