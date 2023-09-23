@@ -6,7 +6,7 @@ import ProjectCard from './projectCard';
 import { useSectionInView } from '@/lib/hooks';
 
 const Projects = () => {
-   const { ref } = useSectionInView('Projects', 0.6);
+   const { ref } = useSectionInView('Projects', 0.3);
 
    return (
       <section
