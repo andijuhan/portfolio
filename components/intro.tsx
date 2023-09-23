@@ -32,7 +32,7 @@ const Intro = () => {
                      height='192'
                      quality='95'
                      priority={true}
-                     className='h-24 w-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl'
+                     className='h-24 w-24 object-cover rounded-full border-[0.35rem] border-white shadow-xl dark:brightness-90'
                   />
                </motion.div>
                <motion.span
@@ -58,7 +58,7 @@ const Intro = () => {
                <span className='font-bold'>Hello, I&apos;m Juhandi.</span>{' '}
                I&apos;m a{' '}
                <span className='font-bold'>full-stack developer</span> with{' '}
-               <span className='font-bold'>5 years</span> of experience.
+               <span className='font-bold'>2 years</span> of experience.
                <br />I enjoy building{' '}
                <span className='italic'>sites & apps</span>. My focus is{' '}
                <span className='underline'>React (Next.js)</span>.
@@ -76,14 +76,14 @@ const Intro = () => {
                      setTimeOfLastClick(Date.now());
                   }}
                   href='#contact'
-                  className='group bg-gray-900 dark:bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
+                  className='group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition'
                >
                   Contact me here
                   <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                </Link>
                <a
                   href='/CV.pdf'
-                  className='group bg-white dark:bg-white/10 px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
+                  className='group bg-white dark:bg-gray-300 dark:text-gray-950 font-medium px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
                   download={true}
                >
                   Download CV
@@ -91,14 +91,14 @@ const Intro = () => {
                </a>
                <div className='flex gap-4'>
                   <a
-                     className='bg-white p-4 text-gray-700 dark:bg-white/10 dark:text-white/60 flex items-center gap-2 rounded-full border border-black/10 hover:scale-110 hover:text-gray-950 w-min'
+                     className='bg-white p-4 text-gray-700 dark:bg-white/10 dark:text-gray-200 flex items-center gap-2 rounded-full border border-black/10 hover:scale-110 hover:text-gray-950 w-min'
                      href='https://www.linkedin.com/in/juhandi-b3070726b'
                      target='_blank'
                   >
                      <BsLinkedin size={25} />
                   </a>
                   <a
-                     className='bg-white p-4 text-gray-700 dark:bg-white/10 dark:text-white/60 flex items-center gap-2 rounded-full border border-black/10 hover:scale-110 hover:text-gray-950 w-min'
+                     className='bg-white p-4 text-gray-700 dark:bg-white/10 dark:text-gray-200 flex items-center gap-2 rounded-full border border-black/10 hover:scale-110 hover:text-gray-950 w-min'
                      href='https://github.com/andijuhan'
                      target='_blank'
                   >
