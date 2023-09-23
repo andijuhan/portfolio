@@ -83,7 +83,7 @@ const Intro = () => {
                </Link>
                <a
                   href='/CV.pdf'
-                  className='group bg-white dark:bg-gray-300 dark:text-gray-950 font-medium px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10'
+                  className='group bg-white dark:bg-gray-300 dark:text-gray-950 px-7 py-3 flex items-center gap-2 rounded-full focus:scale-110 hover:scale-110 active:scale-105 transition border-black/10'
                   download={true}
                >
                   Download CV
