@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
-import { BsEye, BsGithub } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
 import Link from 'next/link';
 
 type ProjectCardProps = (typeof projectsData)[number];
@@ -36,10 +36,13 @@ const ProjectCard = ({
                <h3 className='text-2xl mb-4 font-semibold'>{title}</h3>
                <div className='flex gap-4 text-[2rem] text-gray-300'>
                   <Link href={'#'}>
-                     <BiLinkExternal className='hover:text-indigo-400' />
+                     <BiLinkExternal
+                        size={25}
+                        className='hover:text-indigo-400'
+                     />
                   </Link>
                   <Link href={'#'}>
-                     <BsGithub className='hover:text-indigo-400' />
+                     <BsGithub size={25} className='hover:text-indigo-400' />
                   </Link>
                </div>
                <p className='mt-4 leading-relaxed text-gray-700 dark:text-white/70'>
