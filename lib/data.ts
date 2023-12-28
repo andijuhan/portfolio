@@ -54,7 +54,7 @@ export const experiencesData = [
       title: 'Graduated Bootcamp',
       location: 'Kuningan',
       description:
-         'I decided to pursue my passion for programming. I enrolled in a coding bootcamp and learned full-stack web development',
+         'After graduating from bootcamp, I started building numerous projects using Next.js and other stacks.',
       icon: React.createElement(FaReact),
       date: '2022 - present',
    },
