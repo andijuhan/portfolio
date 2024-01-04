@@ -37,14 +37,14 @@ const ProjectCard = ({
                <div className='flex gap-4 text-[2rem] text-gray-700'>
                   <Link
                      href={'#'}
-                     className='flex items-center gap-2 text-sm px-2 py-1 border rounded-full hover:border-gray-500'
+                     className='flex items-center gap-2 text-sm px-2 py-1 border dark:border-gray-700 rounded-full hover:border-gray-500 dark:text-white/70'
                   >
                      Demo
                      <BsArrowUpRight />
                   </Link>
                   <Link
                      href={'#'}
-                     className='flex items-center gap-2 text-sm px-2 py-1 border rounded-full hover:border-gray-500'
+                     className='flex items-center gap-2 text-sm px-2 py-1 border dark:border-gray-700 rounded-full hover:border-gray-500 dark:text-white/70'
                   >
                      Github
                      <BsArrowUpRight />
