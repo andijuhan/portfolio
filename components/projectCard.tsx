@@ -50,7 +50,7 @@ const ProjectCard = ({
                      <BsArrowUpRight />
                   </Link>
                </div>
-               <p className='mt-4 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-2'>
+               <p className='mt-4 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-3'>
                   {description}
                </p>
 
