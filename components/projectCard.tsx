@@ -50,7 +50,7 @@ const ProjectCard = ({
                      <BsArrowUpRight />
                   </Link>
                </div>
-               <p className='mt-4 leading-relaxed text-gray-700 dark:text-white/70'>
+               <p className='mt-4 leading-relaxed text-gray-700 dark:text-white/70 line-clamp-2'>
                   {description}
                </p>
 
@@ -67,7 +67,7 @@ const ProjectCard = ({
             </div>
 
             <Image
-               className='sm:absolute top-8 sm:-right-40 h-[17rem] sm:h-[initial] object-cover object-top sm:w-[28.25rem] rounded-t sm:shadow-lg dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
+               className='sm:absolute border top-8 sm:-right-40 h-[15rem] sm:h-[initial] object-cover object-top sm:w-[28.25rem] rounded-t sm:shadow-lg dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
                src={imageUrl}
                alt={title}
                quality={90}
