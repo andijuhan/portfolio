@@ -3,8 +3,7 @@ import { projectsData } from '@/lib/data';
 import Image from 'next/image';
 import { useScroll, motion, useTransform } from 'framer-motion';
 import { useRef } from 'react';
-import { BiLinkExternal } from 'react-icons/bi';
-import { BsGithub, BsArrowUpRight } from 'react-icons/bs';
+import { BsArrowUpRight } from 'react-icons/bs';
 import Link from 'next/link';
 
 type ProjectCardProps = (typeof projectsData)[number];
@@ -14,6 +13,7 @@ const ProjectCard = ({
    description,
    tags,
    imageUrl,
+   link,
 }: ProjectCardProps) => {
    const ref = useRef<HTMLDivElement>(null);
 
@@ -36,7 +36,7 @@ const ProjectCard = ({
                <h3 className='text-2xl mb-4 font-semibold'>{title}</h3>
                <div className='flex gap-4 text-[2rem] text-gray-700'>
                   <Link
-                     href={'#'}
+                     href={link}
                      className='flex items-center gap-2 text-sm px-2 py-1 border dark:border-gray-700 rounded-full hover:border-gray-500 dark:text-gray-200'
                   >
                      Demo
@@ -67,7 +67,7 @@ const ProjectCard = ({
             </div>
 
             <Image
-               className='sm:absolute dark:border-gray-800 top-8 sm:-right-40 h-[15rem] sm:h-[initial] object-cover object-center sm:w-[28.25rem] rounded-t sm:shadow-lg dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
+               className='sm:absolute dark:border-gray-800 top-8 sm:-right-40 h-[15rem] sm:h-[400px] object-cover object-center sm:w-[28.25rem] rounded sm:shadow-lg dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
                src={imageUrl}
                alt={title}
                quality={90}

@@ -2,8 +2,8 @@ import React from 'react';
 import { CgWorkAlt } from 'react-icons/cg';
 import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
-import corpcommentImg from '@/public/corpcomment.png';
-import rmtdevImg from '@/public/rmtdev.png';
+import devjobs from '@/public/devjob.png';
+import mdxblog from '@/public/mdxblog.png';
 import wordanalyticsImg from '@/public/wordanalytics.png';
 
 export const links = [
@@ -62,25 +62,20 @@ export const experiencesData = [
 
 export const projectsData = [
    {
-      title: 'CorpComment',
+      title: 'DevJobs',
       description:
-         'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-      tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-      imageUrl: corpcommentImg,
+         'Job vacancy website for software developers with a filtering feature to search for relevant positions.',
+      tags: ['TypeScript', 'Next.js', 'Postgresql', 'Tailwind', 'Prisma'],
+      imageUrl: devjobs,
+      link: '',
    },
    {
-      title: 'rmtDev',
+      title: 'MDXBlog',
       description:
-         'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-      tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-      imageUrl: rmtdevImg,
-   },
-   {
-      title: 'Word Analytics',
-      description:
-         'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-      tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-      imageUrl: wordanalyticsImg,
+         'Personal programming blog utilizing MDX files for content management. Features include keyword search, search engine optimization, post filtering by tags, infinity scroll pagination, and dark mode.',
+      tags: ['TypeScript', 'Next.js', 'Tailwind', 'Zustand'],
+      imageUrl: mdxblog,
+      link: 'http://blog.juhancoding.dev/',
    },
 ] as const;
 
