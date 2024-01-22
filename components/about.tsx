@@ -27,9 +27,11 @@ const About = () => {
             the problem-solving aspect. I{' '}
             <span className='underline'>love</span> the feeling of finally
             figuring out a solution to a problem. My core stack is{' '}
-            <span className='font-medium'>Next.js, Express, and Mysql</span>. I
-            am also familiar with TypeScript and Prisma. I am always looking to
-            learn new technologies. I am currently looking for a{' '}
+            <span className='font-medium'>
+               Next.js, TailwindCSS, Zustand, Zod and Mysql
+            </span>
+            . I am also familiar with TypeScript and Prisma. I am always looking
+            to learn new technologies. I am currently looking for a{' '}
             <span className='font-medium'>full-time position</span> as a
             software developer.
          </p>
