@@ -4,7 +4,7 @@ import { FaReact } from 'react-icons/fa';
 import { LuGraduationCap } from 'react-icons/lu';
 import devjobs from '@/public/devjob.png';
 import mdxblog from '@/public/mdxblog.png';
-import wordanalyticsImg from '@/public/wordanalytics.png';
+import Molicx from '@/public/molicx.png';
 
 export const links = [
    {
@@ -61,6 +61,14 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+   {
+      title: 'Moli.cx',
+      description:
+         'A short URL website like bit.ly built with Next.js 14, Nest.js, Postgresql, & Redis.',
+      tags: ['TypeScript', 'Next.js', 'Postgresql', 'Tailwind', 'Prisma'],
+      imageUrl: Molicx,
+      link: '',
+   },
    {
       title: 'DevJobs',
       description:
