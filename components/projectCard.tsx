@@ -67,7 +67,7 @@ const ProjectCard = ({
             </div>
 
             <Image
-               className='sm:absolute dark:border-gray-800 top-8 sm:-right-40 h-[15rem] sm:h-[400px] object-cover object-center sm:w-[28.25rem] rounded sm:shadow-lg dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
+               className='sm:absolute border dark:border-gray-800 top-8 sm:-right-40 h-[15rem] sm:h-[400px] object-cover object-center sm:w-[28.25rem] rounded sm:shadow-xl dark:sm:shadow-black/70 sm:group-even:-left-40 sm:group-hover:-translate-x-3 sm:group-hover:translate-y-3 sm:group-hover:-rotate-2 sm:group-hover:scale-[1.1] sm:group-even:group-hover:translate-x-3 sm:group-even:group-hover:translate-y-3 sm:group-even:group-hover:rotate-2 transition'
                src={imageUrl}
                alt={title}
                quality={90}
